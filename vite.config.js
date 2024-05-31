@@ -12,13 +12,15 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-      server: {
+  server: {
     proxy: {
       '/png': {
         target: 'https://logoexpress.tubeguruji.com/',
         changeOrigin: true,
-        secure: false,
+        secure: true,
+        rewrite: (path) => path.replace(/^\/png/, '')
       },
     },
   },
+
 })
