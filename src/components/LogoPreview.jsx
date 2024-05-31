@@ -64,7 +64,7 @@ const LogoPreview = ({ downloadIcon }) => {
         >
           {storageValue?.icon?.includes('.png') ? (
             <img
-              src={`/png/${storageValue?.icon}`}
+              src={`https://logoexpress.tubeguruji.com/png/${storageValue?.icon}`}
               alt="logo"
               style={{
                 height: storageValue?.iconSize,
