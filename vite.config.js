@@ -12,11 +12,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  server  :{
-    port:'https://logomaker-app.vercel.app/',
-    strictPort:true,
-    proxy:{
-      '/png':`https://logoexpress.tubeguruji.com/`
-    }
-  }
+    server: {
+    proxy: {
+      '/png': 'https://logoexpress.tubeguruji.com/',
+    },
+  },
 })
