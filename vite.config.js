@@ -13,7 +13,7 @@ export default defineConfig({
     },
   },
   server  :{
-    port:'5173',
+    port:'https://logomaker-app.vercel.app/',
     strictPort:true,
     proxy:{
       '/png':`https://logoexpress.tubeguruji.com/`
